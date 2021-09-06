@@ -1,0 +1,91 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Camiseta Mescla",
+      "price": "28,00",
+      "installments":  ["3x", "9.33"],
+      "image": "../../layout/imagens/img_1.png",
+      "colors": "Cinza",
+      "size": "P"
+    },
+    {
+      "id": 2,
+      "name": "Saia Em Couro",
+      "price": "398,00",
+      "installments":  ["5x", "30.00"],
+      "image": "../../layout/imagens/img_2.png",
+      "colors": "Branca",
+      "size": "G"
+
+    },
+    {
+      "id": 3,
+      "name": "Cardigan Tigre",
+      "price": "398,00",
+      "installments": ["5x", "30.00"],
+      "image": "../../layout/imagens/img_3.png",
+      "colors": "Laranja",
+      "size": "GG"
+    },
+    {
+      "id": 4,
+      "name": "Cardigan off White",
+      "price": "99,90",
+      "installments": ["3x", "33.30"],
+      "image": "../../layout/imagens/img_4.png",
+      "colors": "Branca",
+      "size": "44"
+
+    },
+    {
+      "id": 5,
+      "name": "Body Leopardo",
+      "price": "129,90",
+      "installments": ["3x", "43.43"],
+      "image": "../../layout/imagens/img_5.png",
+      "colors": "Amarela"
+    },
+    {
+      "id": 6,
+      "name": "Casaco Pelos",
+      "price": "398,00",
+      "installments": ["5x", 30],
+      "image": "../../layout/imagens/img_6.png",
+      "colors": "Laranja",
+      "size": "42"
+    },
+    {
+      "id": 7,
+      "name": "Cropped Stripes",
+      "price": "120,00",
+      "installments": ["3x", 40],
+      "image": "../../layout/imagens/img_7.png",
+      "colors": "Azul",
+      "size": "P"
+
+    },
+    {
+      "id": 8,
+      "name": "Camiseta Transparente",
+      "price": "398,00",
+      "installments": ["5x", 30],
+      "image": "../../layout/imagens/img_8.png",
+      "colors": "Cinza"
+    }
+  ],
+  "filter": {
+    "colors": ["Amarela", "Azul", "Branca", "Cinza"],
+    "size": [{
+      "words": ["P", "M", "G", "GG", "U"],
+      "numbers": [36, 38, 40, 42, 44, 46]
+    }],
+    "priceRange":[{
+      "range1":[0, 150],
+      "range2":[51, 150],
+      "range3":[151, 300],
+      "range4":[301, 500],
+      "range5": [0.1]
+    }]
+  }
+}

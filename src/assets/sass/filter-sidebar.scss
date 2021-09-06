@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400&display=swap');
+
+.select-filter option:first-child {
+    display: none;
+}
+
+.select-filter input:checked ~ .select {
+    display: flex;
+}
+
+.sidebar-filter{
+    @media (max-width: 720px) {
+        display: none;
+    }
+}
+
+.mobile-filter{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+    button{
+        width: 100%;
+        padding: 16px;
+        
+
+        border: solid 1px #666;
+        color: #666;
+        font-size: 20px;
+        background-color: #fff;
+        outline: none;
+    }
+    button:first-child{
+        border-right: 0px;
+    }
+
+    @media (max-width: 720px) {
+        display: flex;
+    }
+}
+
+.select-filter{
+    width: 140px;
+    height: 40px;
+    padding: 5px 10px;
+    outline: none;
+    border: solid 1px #666;
+    background-color: #fff;
+    position: relative;
+    margin-left: 90%;
+
+    @media (max-width: 720px) {
+        display: none;
+    }
+    
+    input {
+        display: none;
+    }
+    .arrow{
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        position: relative;
+        top: 2px;
+        left: 20px;
+        font-size: 27px;
+        font-weight: 400;
+    }
+    .select{
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 7px;
+        position: relative;
+        right: 1px;
+        div{
+            width: 140px;
+            margin-left: -10px;
+            border-left: solid 1px #666;
+            border-right: solid 1px #666;
+            padding: 10px 10px;
+            background-color: #fff;
+        }
+        div:first-child{
+            border-top: solid 1px #666;
+        }
+        div:last-child{
+            border-bottom: solid 1px #666;
+        }
+        div:hover{
+            color: #fff;
+            background-color: #00c0ee;
+            margin-right: 10px;
+        }
+    }
+}
+
+.main-filter {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    float: left;
+
+    .grid{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 180px;
+        input{
+            width: 40px;
+            margin-left: 5px;
+            margin-bottom: 5px;
+            color: #c7c7c7;
+            padding: 10px;
+            border: solid 1px #c7c7c7;
+            cursor: pointer;
+        }
+    }
+    .filter-title{
+        margin-bottom: 20px;
+        margin-top: 16px;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+    .label-checkmark{
+        display: block;
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 25px;
+        cursor: pointer;
+    }
+
+
+    .label-checkmark-size{
+        display: block;
+        position: relative;
+        padding-left: 45px;
+        margin-bottom: 45px;
+        text-align: center;
+        cursor: pointer;
+        .checkmark{
+            padding-top: 7px;
+            font-size: 16px;
+            color: #c7c7c7;
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .label-checkmark input{
+        display: none;
+    }
+    .label-checkmark-size input{
+        display: none;
+    }
+    .checkmark{
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 15px;
+        height: 15px;
+        outline: solid 1px #c7c7c7;
+    }
+    .label-checkmark input:checked ~ .checkmark {
+        border: #fff solid 2px;
+        background-color: #2196F3;
+    }
+    .label-checkmark-size input:checked ~ .checkmark {
+        outline: #2196F3 solid 1px;
+        color: #000;
+    }
+}

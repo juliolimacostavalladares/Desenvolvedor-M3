@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/public/stylesheets/header.css">
+    <link rel="stylesheet" href="../assets/public/stylesheets/filter-sidebar.css">
+    <link rel="stylesheet" href="../assets/public/stylesheets/products.css">
+    <link rel="stylesheet" href="../assets/public/stylesheets/footer.css">
+
+    <title>M3</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-main">
+            <img class="logo" src="../../layout/imagens/logo-m3.png" alt="Logo">
+            <picture class="bolsa">
+                <img class="bolsa-main" src="../../layout/imagens/bolsa.svg" alt="Bolsa">
+            </picture>
+        </div>
+    </header>
+    <hr/>
+    <main>
+        <div class="main-content">
+            <h1>Blusas</h1>
+            
+            <label class="select-filter">
+                <span>Ordenar por: <span class="arrow">^</span></span>
+                <input type="checkbox">
+                <div class="select">
+                    <div for="mais">
+                        Mais recentes
+                        <input id="mais" type="checkbox">
+                    </div>
+                    <div for="maior">
+                        Maior preço
+                        <input id="maior" type="checkbox">
+                    </div>
+                    <div for="menor">
+                        Menor preço
+                        <input id="menor" type="checkbox">
+                    </div>
+                </label>
+            </div>
+        </div>
+        <nav class="sidebar-filter">
+            <div class="main-filter">
+                <div class="color-filters">
+                    <h2 class="filter-title">Cores</h2>
+                    <ul class="filter color">
+                    </ul>
+                </div>
+                <div class="filter size-filters">
+                    <h2 class="filter-title">Tamanhos</h2>
+                    <ul class="size">
+                    </ul>
+                </div>
+                <div class="filter range-prices-filter">
+                    <h2 class="filter-title">Fixa de preço</h2>
+                    <ul class="range-prices">
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="products-cards-append">
+            <div class="mobile-filter">
+                <button>Filtrar</button>
+                <button>Ordenar</button>
+            </div>
+            <div class="products-cards">
+               
+                <div class="load-more">
+                    <button>
+                        Carregar Mais
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <p>Agência M3 - Agência de Performance Digital</p>
+    </footer>
+    <script src="../js/fetchFilters.js"></script>
+    <script src="../js/fetchProducts.js"></script>
+</body>
+</html>

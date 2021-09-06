@@ -1,0 +1,14 @@
+{
+  "name": "M3Teste",
+  "version": "0.0,1",
+  "description": "Teste Front-End M3",
+  "main": "index.js",
+  "repository": "https://github.com/juliolimacostavalladares/Desenvolvedor-M3.git",
+  "author": "Julio Lima Costa Valladares <juliolima1225@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "json-server": "^0.16.3",
+    "sass": "^1.38.1"
+  }
+}
